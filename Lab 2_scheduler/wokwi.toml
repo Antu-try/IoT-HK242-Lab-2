@@ -1,0 +1,24 @@
+[wokwi]
+version = 1
+firmware = '.pio\build\esp32doit-devkit-v1\firmware.bin'
+elf = '.pio\build\esp32doit-devkit-v1\firmware.elf'
+
+[[net]]
+id = "wifi"
+type = "wifi"
+
+[[components]]
+type = "esp32"
+id = "esp32"
+wifi = "wifi"
+
+[[components]]
+type = "button"
+id = "button"
+pin = 0
+pull = "up"
+
+[[components]]
+type = "led"
+id = "relay"
+pin = 2
